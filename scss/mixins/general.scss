@@ -1,0 +1,21 @@
+@mixin displayFlexCenter($align: center, $justi: center, $gap: 0) {
+    display: flex;
+    justify-content: $justi;
+    align-items: $align;
+    gap: $gap;
+}
+@mixin fonts($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+@mixin button($color: $white) {
+    padding: 16px 48px;
+    border: none;
+    font-family: "Sen", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: $color;
+    cursor: pointer;
+}
